@@ -30,7 +30,7 @@ try:
 	#Libreria para trabajar y buscar dentro de un html
 	from BeautifulSoup import BeautifulSoup as Soup
 except ImportError:
-	print "Te faltan algunas dependencias, por favor instalá: 'requests', 'BeautifulSoup'"
+	print() "Te faltan algunas dependencias, por favor instalá: 'requests', 'BeautifulSoup'"
 
 def checkPassword(email,password):
 	"""Funcion que chequea el login"""
@@ -82,3 +82,4 @@ for lineas in lectura:
 	password=lineas.split(":")[1]
 	checkPassword(email,password)
 
+print()
